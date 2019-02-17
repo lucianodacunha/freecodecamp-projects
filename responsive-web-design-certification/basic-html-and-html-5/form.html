@@ -10,31 +10,25 @@
                 Fill the form
             </h1>
             <form action="success.html">
+                <label for="name">Name:</label>
+			    <input type="text" id="name" name="name" placeholder="Enter the name" required><br><br>
 
-			    Name:
-			    <input type="text" name="name" value="" placeholder="Enter the name" required><br><br>
-
-                Age:
-                <input type="text" name="age" value="" placeholder="Enter the age" required><br><br>
+                <label for="name">Age:</label>
+                <input type="text" id="age" name="age" placeholder="Enter the age" required><br><br>
 
                 Gender:
-                <label for="female">
-                    <input type="radio" name="gender" id="female" required checked> Female
-                </label>
-                <label for="male">
-                    <input type="radio" name="gender" id="male" required>Male
-                </label><br><br>
+                <input type="radio" id="female" name="gender" value="female" required checked>
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label><br><br>
 
                 Pet:
-                <label for="dog">
-                    <input type="radio" name="pet" id="dog" required checked>Dog
-                </label>
-                <label for="cat">
-                    <input type="radio" name="pet" id="cat" required>Cat
-                </label>
-                <label for="other">
-                    <input type="radio" name="pet" id="other" required>Other
-                </label><br><br>
+                <input type="checkbox" name="pet" id="dog" value="dog" checked>
+                <label>Dog</label>                
+                <input type="checkbox" name="pet" id="cat" value="cat" >
+                <label>Cat</label>                
+                <input type="checkbox" name="pet" id="other" value="other" >
+                <label>Other</label><br><br>
 
                 <button type="submit">Submit</button>
 			</form>
