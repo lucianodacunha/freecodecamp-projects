@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>
+    <main>
+		<div id="form">
+            <h1>
+                Fill the form
+            </h1>
+            <form action="success.html">
+
+			    Name:
+			    <input type="text" name="name" value="" placeholder="Enter the name" required><br><br>
+
+                Age:
+                <input type="text" name="age" value="" placeholder="Enter the age" required><br><br>
+
+                Gender:
+                <label for="female">
+                    <input type="radio" name="gender" id="female" required checked> Female
+                </label>
+                <label for="male">
+                    <input type="radio" name="gender" id="male" required>Male
+                </label><br><br>
+
+                Pet:
+                <label for="dog">
+                    <input type="radio" name="pet" id="dog" required checked>Dog
+                </label>
+                <label for="cat">
+                    <input type="radio" name="pet" id="cat" required>Cat
+                </label>
+                <label for="other">
+                    <input type="radio" name="pet" id="other" required>Other
+                </label><br><br>
+
+                <button type="submit">Submit</button>
+			</form>
+		</div>
+    </main>
+</body>
+</html>
