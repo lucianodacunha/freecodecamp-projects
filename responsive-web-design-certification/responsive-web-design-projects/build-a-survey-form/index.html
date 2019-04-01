@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="nav-fcc">
+            <div class="nav-fcc-content">
+                <a href="https://www.freecodecamp.org/" target="_blank">
+                    <img src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg"
+                    alt="Logo freeCodeCamp" class="nav-fcc-content-img">
+                </a>
+            </div>
+        </div>
+        <h1 id="title">
+          RWD Survey Form
+        </h1>
+      </div>
+    </header>
+  <div class="container">
+    <main>
+    <p id="description">
+      <strong>Please reply below about how you evaluate this form.</strong>
+    </p>
+
+      <form action="success/success.html" id="survey-form">
+        <div class="name">
+          <label for="name" id="name-label" class="question">
+            Enter with your name:
+          </label>
+          <input type="text" id="name" name="name"
+                 placeholder="Your name"
+                 size="30"
+                 required autofocus>
+        </div>
+        <div class="email">
+          <label for="email" id="email-label" class="question">
+            Enter with your name e-mail:
+          </label>
+        </div>
+        <div>
+          <input type="email" id="email"
+                 placeholder="Your e-mail"
+                 name="email" size="30"
+                 required >
+        </div>
+        <div class="media">
+          <label for="dropdown" class="media-question question">
+            Please select the type of media
+            you are accessing this form:
+          </label>
+          <select id="dropdown" required>
+            <option value="">Please choose an option below</option>
+            <option value="">Smartphone</option>
+            <option value="tablet">Tablet</option>
+            <option value="notebook">Notebook</option>
+            <option value="desktop">Desktop</option>
+            <option value="smarttv">Smart Tv</option>
+          </select>
+        </div>
+        <div class="html-code">
+          <div>
+            <label for="" class="question">
+              Regarding the HTML code, how do you rate this form?
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="html-code-bad"
+                   name="html-code" value="Excelent"
+                   checked required>
+            <label for="html-code-bad">Excelent</label>
+          </div>
+          <div>
+            <input type="radio" id="html-code-good"
+                   name="html-code" value="Good">
+            <label for="html-code-good">Good</label>
+          </div>
+          <div>
+            <input type="radio" id="html-code-excel"
+                   name="html-code" value="Bad">
+            <label for="html-code-excel">Bad</label>
+          </div>
+        </div>
+        <div class="css-code">
+          <div>
+            <label for="" class="question">
+              Regarding the CSS code, how do you rate this form?
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="css-code-bad"
+                   name="css-code"
+                   value="Excellent"  required checked>
+            <label for="css-code-bad">Excellent</label>
+          </div>
+          <div>
+            <input type="radio" id="css-code-good"
+                   name="css-code" value="Good">
+            <label for="css-code-good">Good</label>
+          </div>
+          <div>
+            <input type="radio" id="css-code-excel"
+                   name="css-code" value="Bad">
+            <label for="css-code-excel">Bad</label>
+          </div>
+        </div>
+        <div class="reponsive-code">
+          <div>
+            <label for="" class="question">
+              Regarding to code's responsiveness,
+              how do you rate this form?
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="responsive-code-bad"
+                   name="responsive-code"
+                   value="Excellent" required checked>
+            <label for="responsive-code-bad">Excellent</label>
+          </div>
+          <div>
+            <input type="radio" id="responsive-code-good"
+                   name="responsive-code" value="Good">
+            <label for="responsive-code-good">Good</label>
+          </div>
+          <div>
+            <input type="radio" id="responsive-code-excel"
+                   name="responsive-code" value="Bad">
+            <label for="responsive-code-excel">Bad</label>
+          </div>
+        </div>
+        <div class="average">
+          <label for="number" id="number-label" class="question">
+            As a general average, what
+            grade do you give this form? [0-5]
+          </label>
+          <input type="number" id="number" name="average"
+                 value="0" min="0" max="5"
+                 placeholder="Your average" required>
+        </div>
+        <div class="topics">
+          <label class="question">
+            Given your previous answers, which of these
+            topics are most important to improve the current form?
+          </label>
+          <div>
+            <input type="checkbox" id="basic-html"
+                   name="basic-html" value="basic-html" required>
+            <label for="basic-html">Basic HTML and HTML5</label>
+          </div>
+          <div>
+            <input type="checkbox" id="basic-css"
+                   name="basic-css" value="basic-css">
+            <label for="basic-css">Basic CSS</label>
+          </div>
+          <div>
+            <input type="checkbox" id="applied-visual-design"
+                   name="applied-visual-design"
+                   value="applied-visual-design">
+            <label for="applied-visual-design">
+              Applied Visual Design
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="applied-accessibility"
+                   name="applied-accessibility"
+                   value="applied-accessibility">
+            <label for="applied-accessibility">
+              Applied Accessibility
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="rdw-pinciples"
+                   name="rdw-pinciples"
+                   value="rdw-principles">
+            <label for="rdw-pinciples">
+              Responsive Web Design Principles
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="css-flexbox"
+                   name="css-flexbox" value="css-flexbox">
+            <label for="css-flexbox">
+              CSS Flexbox
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="css-grid"
+                   name="css-grid" value="css-grid">
+            <label for="css-grid">
+              CSS Grid
+            </label>
+          </div>
+        </div>
+        <div class="comments">
+          <label for="comments" class="question">
+            If you have any suggestions about possible
+            improvements in the form, please insert below: <em>Optional</em>
+          </label>
+          <textarea name="comments" id="comments" cols="90" rows="8">
+          </textarea>
+        </div>
+        <div class="send">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p></p>
+    </footer>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
+  </body>
+</html>
