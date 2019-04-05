@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            font-family: Helvetica, sans-serif;
+            font-size: 60px;
+        }
+        .container {
+            width: 90%;
+            height: 1000px;
+            margin: 10px auto 0 auto;
+            background-color: #F15;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 20px 30px;        }
+
+        .g1 {
+            background-color: #1AF;
+            grid-area: 1/1/2/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .g2 {
+            background-color: #21E;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 2/1/9/2;
+        }
+        .g3 {
+            background-color: #C6A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 2/2/9/4;
+        }
+        .g4 {
+            background-color: #5B2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 9/1/10/4;
+        }
+
+        .g4 > h3 {
+            font-size: 60%;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .g5 {
+            background-color: #DA1;
+            grid-area: footer;
+        }
+        .g6 {
+            background-color: #5C7;
+        }
+        .g7 {
+            background-color: #F2FA21;
+        }
+        .g8 {
+            background-color: #16FDCE;
+        }
+        .g9 {
+            background-color: #16A1E1;
+        }
+        .g10 {
+            background-color: #CC1141;
+        }
+
+        label {
+            font-size: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="g1"><label for="">title</label></div>
+        <div class="g2">bar</div>
+        <div class="g3">content</div>
+        <div class="g4"><label for="">footer</label></div>
+        <!--<div class="g5">5</div>-->
+        <!--<div class="g6">6</div>-->
+        <!--<div class="g7">7</div>-->
+        <!--<div class="g8">8</div>-->
+        <!--<div class="g9">9</div>-->
+        <!--<div class="g10">10</div>-->
+    </div>
+</body>
+</html>
