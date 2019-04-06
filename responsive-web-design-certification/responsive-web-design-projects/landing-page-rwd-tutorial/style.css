@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url('images/affair-arch-arch-bridge-1021075.jpg') no-repeat 50% 50%;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 500%;
+  font-weight: 800;
+  color: #F9F3F4;
+  text-shadow: 0 10px 10px rgba(0,0,0,0.6), 0 6px 16px rgba(0,0,0,0.50);
+  margin: 0 0 50px 0;
+}
+
+.btn-contact {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #036A81;
+  height: 50px;
+  width: 142px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: solid #036A81 3px;
+  background: rgba(255, 255, 255, 0);
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.btn-contact-link {
+  color: #036A81;
+  text-decoration: none;
+}
+
+.btn-contact-link:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+.btn-contact:hover {
+  color: #FFF;
+  border: solid #FFF 3px;
+}
+
+.resume {
+  background: rgba(180, 11, 231);
+  padding: 0 20px;
+}
+
+p {
+  padding-top: 20px 0 ;
+  font-size: 120%;
+  line-height: 210%;
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .content h1 {
+    font-size: 250%;
+      margin: 0 0 25px 0;
+  }
+
+  .btn-contact {
+    height: 45px;
+    width: 120px;
+    font-size: 75%;
+  }
+
+  p {
+    font-size: 100%;
+    line-height: 160%;
+  }
+}
