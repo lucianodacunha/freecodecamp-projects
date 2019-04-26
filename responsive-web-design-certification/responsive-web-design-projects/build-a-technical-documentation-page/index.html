@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>:: Iniciando em Python - Preparando o ambiente ::</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.1em;
+      line-height: 1.5rem;
+    }
+
+    #main-doc {
+
+    }
+
+    section {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    h2, h3 {
+      margin: 1rem 0;
+    }
+
+    nav {
+      border-right: 5px solid black;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      height: 100%;
+      width: 400px;
+      color: #FFF;
+      background-color: #4e4a4a;
+    }
+
+    nav header {
+      text-align: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      line-height: 1.5rem;
+    }
+
+    nav li {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-top: 1px solid black;
+
+    }
+
+    nav li a {
+      padding-left: 1.2rem;
+      text-decoration: none;
+      color: #FFF;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    nav li:hover {
+      background-color: rgba(53, 49, 49, 0.66);
+      cursor: pointer;
+    }
+
+    main {
+      margin-left: 410px;
+      padding: 0 1.5rem;
+    }
+
+    main ul {
+      margin-left: 25px;
+      margin-bottom: 25px;
+      margin-top: 25px;
+    }
+
+    main a {
+      color: #000;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 320px) {
+      #main-doc {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <nav id="navbar">
+    <header>
+      <h1>
+        Iniciando em Python <br>
+        Preparando o ambiente
+      </h1>
+    </header>
+    <div class="nav-menu">
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introdução">Introdução</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Ferramentas_necessárias">Ferramentas necessárias</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Antes_de_tudo,_preparar_o_ambiente">Antes de tudo, preparar o ambiente</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Instalando_o_Python_no_Pyenv">Instalando o Python no Pyenv</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Ativando_a_versão_do_Python_instalada">Ativando a versão do Python instalada</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Criando_o_ambiente_virtual">Criando o ambiente virtual</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Ativando_o_ambiente_virtual">Ativando o ambiente virtual</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Desativando_o_ambiente_virtual">Desativando o ambiente virtual</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Referência">Referência</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introdução">
+      <header >
+        <h2>
+          Introdução
+        </h2>
+      </header>
+      <article>
+        <p>
+          Esta documentação tem como objetivo demonstrar os passos necessários para
+          a preparação de um ambiente de desenvolvimento Python, de forma que
+          fique isolado do Python do sistema, além de oferecer a possibilidade
+          de ter uma versão diferente para cada projeto distinto.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Ferramentas_necessárias">
+      <header >
+        <h2>
+          Ferramentas necessárias
+        </h2>
+      </header>
+      <article>
+        <ul>
+          <li>Linux, nesse caso Ubuntu 16.04.</li>
+        </ul>
+
+        <p>
+          Verificando a versão do Ubuntu/Linux:
+        </p>
+      <div>
+        <pre>
+          <code>
+    $ cat /etc/lsb-release
+    DISTRIB_ID=Ubuntu
+    DISTRIB_RELEASE=16.04
+    DISTRIB_CODENAME=xenial
+    DISTRIB_DESCRIPTION="Ubuntu 16.04.3 LTS"</code>
+        </pre>
+      </div>
+        <ul><li>Python 3.6</li></ul>
+        <p>Verificando a versão padrão do Python</p>
+        <pre>
+          <code>
+    $ python -V
+    Python 2.7.12
+    $ python3 -V
+    Python 3.5.2
+    $</code>
+        </pre>
+      </article>
+    </section>
+    <section class="main-section" id="Antes_de_tudo,_preparar_o_ambiente">
+      <header >
+        <h2>
+          Antes de tudo, preparar o ambiente
+        </h2>
+      </header>
+      <article>
+        <p>
+          O Ubuntu já vem com as versões 2 e 3 do Python. Mas um requisito importante antes de começar a instalar coisas no seu Python é criar um ambiente virtual.
+        </p>
+        <p>
+          Esse procedimento irá isolar sua versão do Python, sendo possível criar um ambiente para cada projeto e além disso, preservar a versão original do sistema.
+        </p>
+      </article>
+      <h3>Instalando o Pyenv</h3>
+      <article>
+        <p>No terminal execute os seguintes comandos:</p>
+        <pre>
+          <code>
+      $ sudo apt-get update
+      $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev git
+      $ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+      $ pyenv update</code>
+        </pre>
+        <p>
+          Ao final da instalação, adicionar as seguintes linhas em seu arquivo <code>~/.bashrc</code>.
+        </p>
+        <pre>
+          <code>
+      export PATH="$HOME/.pyenv/bin:$PATH"
+      eval "$(pyenv init -)"
+      eval "$(pyenv virtualenv-init -)"</code>
+        </pre>
+        <p>
+          Executando o comand pyenv será possível ver os comando disponíveis. Alguns deles serão utilizados com mais frequência:
+        </p>
+        <pre>
+          <code>
+      $ pyenv
+      pyenv 1.1.5
+      Usage: pyenv <command> [<args>]
+
+      Some useful pyenv commands are:
+         commands    List all available pyenv commands
+         local       Set or show the local application-specific Python version
+         global      Set or show the global Python version
+         shell       Set or show the shell-specific Python version
+         install     Install a Python version using python-build
+         uninstall   Uninstall a specific Python version
+         rehash      Rehash pyenv shims (run this after installing executables)
+         version     Show the current Python version and its origin
+         versions    List all Python versions available to pyenv
+         which       Display the full path to an executable
+         whence      List all Python versions that contain the given executable
+
+      See pyenv help <command> for information on a specific command.
+      For full documentation, see: https://github.com/pyenv/pyenv#readme</code>
+        </pre>
+      </article>
+    </section>
+    <section class="main-section" id="Instalando_o_Python_no_Pyenv">
+      <header >
+        <h2>
+          Instalando o Python no Pyenv
+        </h2>
+      </header>
+      <article>
+        <p>
+          Verifique as versões do Python instaladas no Pyenv:
+        </p>
+        <pre>
+          <code>
+    $ pyenv versions
+    system</code>
+        </pre>
+        <p>
+          Somente a versão system será exibida, indicando que somente a versão do sistema está instalada.
+        </p>
+        <p>
+          Para instalar novas versões digite:
+        </p>
+        <pre>
+          <code>
+    $ python install 3.6</code>
+        </pre>
+        <p>
+          Onde 3.6 é a versão desejada. Para ver todas as versões disponíveis digite:
+        </p>
+        <pre>
+          <code>
+    $ python install -l</code>
+        </pre>
+      </article>
+    </section>
+    <section class="main-section" id="Ativando_a_versão_do_Python_instalada">
+      <header>
+        <h2>
+          Ativando a versão do Python instalada
+        </h2>
+      </header>
+      <article>
+        <p>E para ativar a versão desejada, digite:</p>
+        <pre>
+          <code>
+      $ pyenv global 3.6.0</code>
+        </pre>
+        <p>
+          Nesse momento a versão 3.6.0 é a padrão. Para confirmar, consulte a versão do Python que está ativada:
+        </p>
+        <pre>
+          <code>
+      $ python -V
+      Python 3.6.0</code>
+        </pre>
+      </article>
+    </section>
+    <section class="main-section" id="Criando_o_ambiente_virtual">
+      <header>
+        <h2>
+          Criando o ambiente virtual
+        </h2>
+      </header>
+      <article>
+        <p>
+          Agora, para isolar uma versão específica do Python, escolha um diretório onde será alocado o projeto. Dentro desse local, execute os seguinte comandos:
+        </p>
+        <pre>
+          <code>
+      $ python -m venv .py3</code>
+        </pre>
+        <p>
+          O comando acima, basicamente realiza as seguinte operações:
+        </p>
+        <ul>
+          <li>
+            python -m: sintaxe para rodar um script com Python;
+          </li>
+          <li>
+            venv: o nome do script do pyenv responsável por criar ambientes virtuais;
+          </li>
+          <li>
+            .py3: nome do meu ambiente virtual. Esse nome poderia ser outro.
+          </li>
+        </ul>
+        <p>
+          Após isso, será criado um diretório, que nesse caso é oculto, e dentro dele existirá um versão do Python 3.6.0 isolada.
+        </p>
+        <p>
+          Nesse ambiente será possível instalar novos pacotes sem prejudicar a versão global do pyenv e muito menos a versão original do sistema.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Ativando_o_ambiente_virtual">
+      <header>
+        <h2>
+          Ativando o ambiente virtual
+        </h2>
+      </header>
+      <article>
+        <p>
+          Para ativar o ambiente virtual, execute os seguintes comandos:
+        </p>
+        <pre><code>$ source .py3/bin/activate</code></pre>
+        <p>
+          Um prefixo aparecerá no bash, indicando que o ambiente está ativo.
+        </p>
+        <pre>
+          <code>
+      (.py3) $</code></pre>
+      </article>
+    </section>
+    <section class="main-section" id="Desativando_o_ambiente_virtual">
+      <header>
+        <h2>
+          Desativando o ambiente virtual
+        </h2>
+      </header>
+      <article>
+        <p>
+          Para desativar o ambiente virtual, execute o seguinte comando.
+        </p>
+      <pre>
+      <code>
+      (.py3) $ deactivate
+      $</code>
+      </pre>
+      </article>
+    </section>
+    <section class="main-section" id="Referência">
+      <header>
+        <h2>
+          Referência
+        </h2>
+      </header>
+      <article>
+        <p>
+          <ul>
+            <li>
+              <a href="https://github.com/pyenv/pyenv" target="_blank">
+                pyenv
+              </a>
+            </li>
+          </ul>
+        </p>
+      </article>
+    </section>
+  </main>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
+</body>
+</html>

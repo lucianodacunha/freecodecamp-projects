@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>10dev</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: "Roboto", sans-serif;
+      color: #000;
+      line-height: 1.5rem;
+    }
+
+    #header {
+      text-align: center !important;
+      font-size: 1.5rem;
+      padding-top: calc(6rem + 80px);
+      padding-bottom: 6rem;
+      background-color: #b2bec3;
+    }
+
+    #header .header-content h1 {
+      text-transform: uppercase;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    #header .header-content h1 small {
+      display: block;
+      margin-top: 2rem;
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+
+    header .header-content #header-img {
+      border-radius: 50%;
+      margin-bottom: 3rem;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      background-color: #fff;
+      color: #0984e3;
+      width: 100%;
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    nav a.header-logo{
+      text-decoration: none;
+      color: #0984e3;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+    li {
+      list-style: none;
+      padding-left: 1.2rem;
+    }
+
+    li a {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: #0984e3;
+    }
+
+    #intro {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      background-color: #FFF;
+    }
+
+    #intro h2 {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
+    #intro .container {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    #info {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      width: 100%;
+      background-color: #FFF;
+    }
+
+    #info .container {
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    #info .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #contact {
+      height: 400px;
+      background-color: #FFF;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+
+    #contact .container {
+      text-align: center;
+    }
+
+    #contact h2 {
+      font-size: 3.5rem;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+    }
+
+    #contact .container .row #form #submit{
+      text-align: center;
+      padding: 5px;
+      font-size: 1.5rem;
+    }
+
+    #email {
+      margin-bottom: 2rem;
+    }
+
+    #contact .container .row #form #email {
+      padding: 10px;
+      font-size: 1.5rem;
+    }
+
+    footer {
+      height: 80px;
+      width: 100%;
+      line-height: 1.5rem;
+      background-color: #000;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    #footer .container .row {
+      text-align: center;
+      font-size: 1rem;
+      color: #FFF;
+    }
+
+    .copy-left {
+      display: inline-block;
+      text-align: right;
+      margin: 0px;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: “FlipH”;
+    }
+
+    @media screen and (max-width: 320px) {
+      section {
+        margin: 0 auto;
+      }
+    }
+
+  </style>
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <div class="container">
+        <div class="nav-logo">
+          <a class="header-logo" href="#">FreeCodeCamp</a>
+        </div>
+        <div class="nav-inner">
+          <ul>
+            <li><a class="nav-link" href="#intro">Intro</a></li>
+            <li><a class="nav-link" href="#info">Info</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-content">
+      <img id="header-img" src="https://via.placeholder.com/256" alt="" class="placeholder-img">
+      <h1>
+        10dev
+        <small>Desenvolvendo soluções</small>
+      </h1>
+    </div>
+
+  </header>
+  <section id="intro">
+    <div class="container">
+      <h2>
+        Lorem ipsum dolor sit
+      </h2>
+      <div class="row">
+        <p>
+          Consectetur adipisicing elit. Culpa eius
+          eos ex fugit iure nam possimus provident, reiciendis! Beatae
+          consectetur doloribus magni mollitia nam officia, quidem.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="info">
+    <div class="container">
+      <div class="row">
+        <iframe id="video" width="560" height="315"
+                src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <h2>Contact Us</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input id="email" type="email" name="email" placeholder="E-mail" required><br>
+          <input type="submit" id="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <span class="copy-left">©</span> Copyleft - 2019
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
+</body>
+
+</html>
+

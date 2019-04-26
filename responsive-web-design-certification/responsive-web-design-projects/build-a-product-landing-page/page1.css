@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+  height: 80px;
+  width: 100%;
+
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  color: white;
+  z-index: 0;
+}
+
+#nav-bar-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-right: 20px;
+}
+
+#nav-bar-menu ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+#nav-bar-menu ul li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#nav-bar-menu ul li a:link {
+
+}
+
+.intro {
+  top: 0;
+  background: url('images/bkg-img.jpg') no-repeat 50% 50%;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  margin: auto;
+  margin-top: -80px;
+}
+
+.intro .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.intro .inner .content {
+  text-align: center;
+  color: #000;
+
+}
+
+.intro .inner .content h1 {
+  font-size: 600%;
+  font-weight: 800;
+  margin-bottom: 30px 0;
+}
+
+.intro .inner .content p {
+  font-size: 200%;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.btn-more, .btn-contact {
+  border: 3px solid black;
+  padding: 5px 5px;
+  height: 48px;
+  width: 124px;
+  font-size: 20px;
+  border-radius: 10px;
+  background: none;
+  color: black;
+  margin: 0 17px;
+  cursor: pointer;
+}
+
+.info {
+  height: 982px;
+  width: 100%;
+  margin: auto;
+  background-color: #aeaeb6;
+}
+
+.info .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 1140px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.info .inner .content {
+  text-align: center;
+  color: #000;
+
+}
+
+.info .inner .content h2 {
+  font-size: 300%;
+  font-weight: 800;
+  margin-bottom: 30px 0;
+}
+
+.info .inner .content p {
+  font-size: 150%;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.info-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info .inner .content .info-services .div-service {
+  height: 250px;
+  width: 25%;
+  margin: 0 10px;
+  text-align: left;
+}
+
+.info .inner .content .info-services .div-service p {
+  font-size: 110%;
+  font-weight: 300;
+  margin: 5px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  height: 900px;
+  padding-top: 5%;
+  padding-bottom: -5%;
+}
+
+.content h2 {
+  grid-area: 1/1/1/4;
+}
+
+.content .p-intro {
+  grid-area: 2/1/3/4;
+}
+
+@media screen and (min-width: 320px) and (max-width: 619px){
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: #aeaeb6;
+  }
+
+  .info-services {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+ .info .inner .content .info-services .div-service {
+    height: 25%;
+    width: 90%;
+    text-align: left;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width: 999px){
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 680px;
+    margin: auto;
+    background-color: #aeaeb6;
+  }
+
+  .info-services {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+ .info .inner .content .info-services .div-service {
+    height: 25%;
+    width: 40%;
+    text-align: left;
+    margin: 10px auto;
+  }
+}
+
+/*
+cor rodapé
+#432c49
+*/

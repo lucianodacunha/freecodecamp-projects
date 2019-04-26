@@ -1,37 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Intro</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="container">
+  <head>
+      <meta charset="UTF-8">
+      <title>Intro</title>
+      <link rel="stylesheet" href="page1.css">
+  </head>
+  <body>
     <header id="header">
-      <div>
-        <img src="#" alt="" id="header-img">
-        <nav id="nav-bar">
-          <div id="nav-bar-menu">
-            <ul>
-              <li><a href="#intro" class="nav-link">Link 1</a></li>
-              <li><a href="#video" class="nav-link">Link 2</a></li>
-              <li><a href="page3.html" class="nav-link">Link 3</a></li>
-            </ul>
-          </div>
-        </nav>
+      <div class="inner">
+        <div class="content">
+          <nav id="nav-bar">
+            <div id="nav-bar-menu">
+              <ul>
+                <li><a href="#intro" class="nav-link">Intro</a></li>
+                <li><a href="#info" class="nav-link">Info</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
-
-    <section class="intro">
-      <div id="intro">
-        <h1 id="title">10dev</h1>
-        <p>Technology solutions for all types of companies</p>
-        <div id="btn-info">
-          <button id="btn-more">More</button>
-          <button id="btn-contact"><label>Contact</label></button>
+    <section id="intro" class="intro">
+      <div class="inner">
+        <div class="content">
+          <h1 id="title">10dev</h1>
+          <p>Technology solutions for all types of companies</p>
+          <div id="btn-action">
+            <button class="btn-more"><label>More</label></button>
+            <button class="btn-contact"><label>Contact</label></button>
+          </div>
         </div>
       </div>
     </section>
-  </div>
-</body>
+    <section id="info" class="info">
+      <div class="inner">
+        <div class="content">
+          <div class="info-header">
+            <h2>What we offer</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="info-services">
+            <div class="div-service">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+              <p>Amet dolor doloremque, ducimus, error expedita facere itaque mollitia, non officiis optio placeat quibusdam soluta velit.</p>
+            </div>
+            <div class="div-service">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+              <p>Amet dolor doloremque, ducimus, error expedita facere itaque mollitia, non officiis optio placeat quibusdam soluta velit.</p>
+            </div>
+            <div class="div-service">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+              <p>Amet dolor doloremque, ducimus, error expedita facere itaque mollitia, non officiis optio placeat quibusdam soluta velit.</p>
+            </div>
+            <div class="div-service">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+              <p>Amet dolor doloremque, ducimus, error expedita facere itaque mollitia, non officiis optio placeat quibusdam soluta velit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="inner">
+        <div class="content">
+          <h2>Contact Us</h2>
+          <div class="p-intro">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                At blanditiis commodi consequuntur delectus error fuga
+                fugit impedit, molestiae, nemo numquam, sed tempore temporibus
+                velit.
+            </p>
+          </div>
+          <form action="#" id="form">
+            <div id="input-inline">
+              <div class="input-div1">
+                <input type="text" id="name" placeholder="Name" autofocus required>
+              </div>
+              <div class="input-div2">
+                <input type="email" id="email" placeholder="E-mail" required>
+              </div>
+            </div>
+            <div id="text-div">
+              <textarea name="message" id="message" cols="30" rows="10" required
+                placeholder="Message"></textarea>
+            </div>
+            <div id="btn-div">
+              <input type="submit" id="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
 </html>

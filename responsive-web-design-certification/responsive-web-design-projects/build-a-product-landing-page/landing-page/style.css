@@ -1,0 +1,122 @@
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: "Open Sans", sans-serif;
+      color: #FFF;
+    }
+
+    header {
+      display: flex;
+      position: fixed;
+      top: 0;
+      min-height: 80px;
+      width: 100%;
+      background-color: darkgreen;
+    }
+
+    header .inner {
+      width: 100%;
+      min-height: 80px;
+    }
+
+    header .inner .content {
+      display: flex;
+      min-height: 80px;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    #nav-bar {
+      display: inline-block;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+    li a {
+      text-decoration: none !important;
+      color: #FFF;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    #intro {
+      height: 500px;
+      background-color: red;
+    }
+
+    #intro .inner .content {
+      height: 500px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #intro .inner .content h1 small {
+      display: block;
+    }
+
+    #info {
+      height: 400px;
+      width: 100%;
+      background-color: green;
+    }
+
+    #info .inner, #info .content {
+      height: 400px;
+      width: 100%;
+    }
+
+    #info .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #contact {
+      height: 400px;
+      background-color: blue;
+    }
+
+    #contact .inner .content {
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #submit {
+      display: block;
+    }
+
+    footer {
+      height: 80px;
+      width: 100%;
+      background-color: darkgreen;
+    }
+
+    @media screen and (max-width: 320px) {
+      section {
+        margin: 0 auto;
+      }
+    }

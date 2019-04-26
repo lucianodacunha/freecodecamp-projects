@@ -75,7 +75,18 @@ html, body {
 }
 
 .resume {
-  background: rgba(180, 11, 231);
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: table;
+}
+
+.subtitle h2 {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.content-text {
   padding: 0 20px;
 }
 
