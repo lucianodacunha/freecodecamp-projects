@@ -12,6 +12,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     html, body {
@@ -102,8 +103,14 @@
       text-transform: uppercase;
     }
 
+    #info h2 {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
     #intro .container {
-      max-width: 800px;
+      max-width: 1140px;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
@@ -188,6 +195,12 @@
       -ms-filter: “FlipH”;
     }
 
+    .feature {
+      display: inline-block;
+      margin: 1.5rem;
+      border-radius: 50%;
+    }
+
     @media screen and (max-width: 320px) {
       section {
         margin: 0 auto;
@@ -224,19 +237,26 @@
   <section id="intro">
     <div class="container">
       <h2>
-        Lorem ipsum dolor sit
+        Intro
       </h2>
       <div class="row">
-        <p>
-          Consectetur adipisicing elit. Culpa eius
-          eos ex fugit iure nam possimus provident, reiciendis! Beatae
-          consectetur doloribus magni mollitia nam officia, quidem.
-        </p>
+        <div class="feature">
+          <img src="https://via.placeholder.com/300x200" alt="">
+        </div>
+        <div class="feature">
+          <img src="https://via.placeholder.com/300x200" alt="">
+        </div>
+        <div class="feature">
+          <img src="https://via.placeholder.com/300x200" alt="">
+        </div>
       </div>
     </div>
   </section>
   <section id="info">
     <div class="container">
+      <h2>
+        Info
+      </h2>
       <div class="row">
         <iframe id="video" width="560" height="315"
                 src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0"
@@ -259,7 +279,7 @@
   <footer id="footer">
     <div class="container">
       <div class="row">
-        <span class="copy-left">©</span> Copyleft - 2019
+        <span class="copy-left">©</span> 2019
       </div>
     </div>
   </footer>
