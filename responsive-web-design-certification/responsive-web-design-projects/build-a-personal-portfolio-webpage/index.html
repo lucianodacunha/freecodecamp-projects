@@ -1,0 +1,269 @@
+<html>
+<head>
+  <title>
+      Personal Portfolio Webpage
+  </title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: "Montserrat", sans-serif;
+      height: 100%;
+      margin: 0;
+    }
+
+    #navbar {
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1.5rem;
+      line-height: 1.5rem;
+      background-color: rgba(17, 45, 49, 0.81);
+    }
+
+    #navbar .row {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    #navbar ul li {
+      display: inline-block;
+      list-style: none;
+      padding: 0 20px;
+    }
+
+    #navbar ul li a {
+      text-decoration: none;
+      color: #effcea;
+    }
+
+    #welcome-section {
+      height: 100%;
+      width: 100%;
+      background-color: #88BDBC;
+      display: table;
+    }
+
+    #welcome-section .container {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      max-width: none;
+    }
+
+    #welcome-section .container .row {
+      text-align: center;
+    }
+
+    #welcome-section .container .row h1 {
+      font-size: 4rem;
+      font-weight: 800;
+    }
+
+    small {
+      font-weight: 300;
+      display: block;
+    }
+
+    #projects {
+      font-size: 2rem;
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+      width: 100%;
+      background-color: #254E58;
+      text-align: center;
+    }
+
+    #projects h2 {
+      font-size: 48px;
+    }
+
+    figure {
+      margin: 5rem;
+      display: inline-block;
+    }
+
+    .work-thumb {
+      height: 180px;
+      margin-bottom: 1rem;
+      border: 3px solid #000;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    #profiles {
+    font-size: 2rem;
+      background-color: #112d31;
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    #profiles h2 {
+      font-size: 48px;
+      text-align: center;
+    }
+
+    .profile-thumb {
+      width: 355px;
+      margin-bottom: 1rem;
+      border: 3px solid #000;
+      border-radius: 10px;
+      padding: 30px;
+      background-color: #FFF;
+    }
+
+    .fcc {
+      width: 355px;
+      height: 135.5px;
+      background-color: darkgreen;
+    }
+
+    footer {
+      font-weight: bold;
+      line-height: 3rem;
+      text-align: center;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      background-color: #4e4a41;
+      border-top: 3px solid #6e6659;
+    }
+
+    .copyleft {
+      display: inline-block;
+      text-align: right;
+      margin: 0px;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: “FlipH”;
+    }
+    @media screen and (max-width: 320px) {
+      #welcome-section .container .row h1 {
+        font-size: 2.5rem;
+       }
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <div class="container">
+      <div class="row">
+        <ul>
+          <li class="nav-item"><a href="#welcome-section" class="nav-link">Welcome</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#profiles" class="nav-link">Profiles</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="welcome-section">
+      <div class="container">
+        <div class="row">
+          <header>
+            <h1>
+              Personal Portfolio Webpage
+              <small>
+                Luciano da Cunha
+              </small>
+            </h1>
+          </header>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <header>
+            <h2>Projects</h2>
+          </header>
+        </div>
+        <div class="row works">
+          <figure class="project-tile">
+            <a href="https://codepen.io/lucianodacunha/pen/VRxKem">
+              <img class="work-thumb" src="imgs/tribute-page.png" alt="">
+            </a>
+            <figcaption>Tribute Page</figcaption>
+          </figure >
+          <figure class="project-tile">
+            <a href="https://codepen.io/lucianodacunha/pen/EJYwKz">
+              <img class="work-thumb" src="imgs/survey-form.png" alt="">
+            </a>
+            <figcaption>Survey Form</figcaption>
+          </figure>
+          <figure class="project-tile">
+            <a href="https://codepen.io/lucianodacunha/pen/qwKwjX">
+              <img class="work-thumb" src="imgs/landing-page.png" alt="">
+            </a>
+            <figcaption>Landing Page</figcaption>
+          </figure>
+          <figure class="project-tile">
+            <a href="https://codepen.io/lucianodacunha/pen/mgaqqo">
+              <img class="work-thumb" src="imgs/technical-documentation.png" alt="">
+            </a>
+            <figcaption>Technical Documentation</figcaption>
+          </figure>
+          <figure class="project-tile">
+            <a href="#">
+              <img class="work-thumb" src="imgs/simple-website.png" alt="">
+            </a>
+            <figcaption>Simple Website</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="profiles">
+      <div class="container">
+        <div class="row">
+          <header>
+            <h2>Profiles</h2>
+          </header>
+        </div>
+        <div class="row profiles">
+          <figure>
+            <a href="https://github.com/lucianodacunha" id="profile-link" target="_blank">
+              <img class="profile-thumb" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="">
+            </a>
+            <figcaption>Github</figcaption>
+          </figure>
+          <figure>
+            <a href="https://www.freecodecamp.org/lucianodacunha" id="profile-link1" target="_blank">
+              <img class="profile-thumb fcc" src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg">
+            </a>
+            <figcaption>FreeCodeCamp</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <p><span class="copyleft">&copy;</span> 2019, Luciano da Cunha</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+

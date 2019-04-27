@@ -1,0 +1,35 @@
+  #navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(17, 45, 49, 0.81);
+    color: #effcea;
+  }
+
+  #navbar .container .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #navbar .container .row ul {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  .nav-item {
+    list-style: none;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #effcea;
+  }
+
+    @media screen and (max-width: 320px) {
+      html, body {
+        line-height: 1.5rem;
+      }
